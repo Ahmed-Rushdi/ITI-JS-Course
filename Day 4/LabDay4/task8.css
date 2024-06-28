@@ -1,0 +1,14 @@
+#name2:valid {
+    background-color: white;
+}
+#name2:invalid {
+    background-color: gray;
+}
+#name2:invalid + #name-err2 {
+    display: inline;
+    color: red
+}
+
+#name2:valid + #name-err2 {
+    display: none;
+}
