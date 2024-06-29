@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                display: flex;
+                align-items: center;
+            }
+            .container img {
+                margin-right: 10px;
+            }
+            .container div {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+            }
+            .container div p {
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Task1</h1>
+        <form action="#" id="login-form">
+            <label for="name">Username:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your Name:"
+                required
+            />
+            <br />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <br />
+            <label for="rem-cbox">Remember Me?</label>
+            <input type="checkbox" name="rem-cbox" id="rem-cbox" />
+            <br />
+            <button type="submit">Register</button>
+        </form>
+        <h5 id="welcome"></h5>
+
+        <h1>Task5</h1>
+        <input type="text" id="user-id" /><button id="uid-btn">Display</button>
+        <div id="uid-data" class="container"></div>
+        <script src="script.js"></script>
+
+        <select id="drop-users"></select>
+        <div id="uid-data2" class="container"></div>
+        
+        <h1>Task6</h1>
+        <form action="#">
+          <label for="uname6">Full Name:</label><input type="text" name="name" id="uname6" pattern="^[A-Za-z]{3,} ([A-Za-z]{3,})+$" required><br>
+          <label for="email6">Email:</label><input type="email" name="email" id="email6" pattern="^[\w]{2,}([.-][\w]{2,})*@[\w]{2,}([.-][\w]{2,})*\.eg$" required><br>
+          <input type="submit" value="check">
+        </form>
+    </body>
+</html>
